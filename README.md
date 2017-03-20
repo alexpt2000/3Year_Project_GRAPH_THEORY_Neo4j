@@ -11,6 +11,7 @@ will store information about student groups, classrooms, lecturers, and work hou
 
 
 ## The Model
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DesignProject.png)
 
 
 ### Nodes
