@@ -43,6 +43,8 @@ CREATE (m:Room { id: 223, title: 'Room 223', Capacity: 60 });
 .....
 CREATE (s:Subject { title: 'GRAPH THEORY'});
 CREATE (s:Subject { title: 'Database Mgmt Sys'});
+.....
+CREATE (c:Course { title: 'BSC Software Development'});
 ```
 
 #### Delete
