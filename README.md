@@ -41,6 +41,7 @@ will store information about student groups, classrooms, lecturers, and work hou
 CREATE (m:Room { id: 994, title: 'Room 994', Capacity: 90 });
 CREATE (m:Room { id: 223, title: 'Room 223', Capacity: 60 });
 .....
+CREATE (s:Subject { id: 'KSOFG73', title: 'GRAPH THEORY'});
 ```
 
 #### Delete
