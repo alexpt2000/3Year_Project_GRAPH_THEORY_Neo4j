@@ -36,5 +36,9 @@ will store information about student groups, classrooms, lecturers, and work hou
 
 
 ### Cypher Statements
+#### Create
+```
+CREATE (m:Room { id: 994, title: 'Room 994', Capacity: 90 });
+```
 
 
