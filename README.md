@@ -39,6 +39,12 @@ will store information about student groups, classrooms, lecturers, and work hou
 #### Create
 ```
 CREATE (m:Room { id: 994, title: 'Room 994', Capacity: 90 });
+CREATE (m:Room { id: 223, title: 'Room 223', Capacity: 60 });
+.....
 ```
 
+#### Delete
+```
+MATCH (r) WHERE id(r) = 14 DELETE (r);
+```
 
