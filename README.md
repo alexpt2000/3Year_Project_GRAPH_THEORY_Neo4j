@@ -16,7 +16,7 @@ will store information about student groups, classrooms, lecturers, and work hou
 
 ### Nodes
 
-* TimeTable
+* TimeTable ()
 * TimerSlot
 * RoomCapacity
 * Subject
