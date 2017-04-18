@@ -11,7 +11,7 @@ will store information about student groups, classrooms, lecturers, and work hou
 
 
 ## The Model
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DesignProject.png)
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignProject.png)
 
 
 ### Node labels
@@ -32,11 +32,17 @@ will store information about student groups, classrooms, lecturers, and work hou
 * GROUP
 
 ## Database Setup
+Neo4j runs on Linux, Windows and Mac OS X. There are desktop installers for Community Edition available for Mac OS X and Windows. There are also platform-specific packages and zip/tar archives of both Community Edition and Enterprise editions.
+
+### Install Neo4j
+[Download Neo4j Community Edition](https://neo4j.com/download/community-edition/)
 
 ### Start the Database
-
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/StartNeo4j.png)
 
 ### Cypher Statements
+You can enter the cypther commands in the Neo4j browser, or the commands are provided in the Cypher.txt file.
+
 #### Create Node
 
 TimeTable
@@ -76,12 +82,18 @@ CREATE
 (graphTheory)-[:SUBJECT]->(monTime13to14), 
 (ianMcloughlin)-[:LECTURER]->(graphTheory)
 ```
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DesignCypher.png)
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignCypher.png)
 
-#### Delete
+#### Delete 
 
 All Nodes
 ```
 MATCH (n) DETACH DELETE n
+```
+
+#### Update 
+
+```
+
 ```
 
