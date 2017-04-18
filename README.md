@@ -41,7 +41,7 @@ Neo4j runs on Linux, Windows and Mac OS X. There are desktop installers for Comm
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/StartNeo4j.png)
 
 ### Cypher Statements
-You can enter the cypther commands in the Neo4j browser, or the commands are provided in the Cypher.txt file.
+You can enter the cypther commands in the Neo4j browser, or the commands are provided in the [Cypher.txt](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/Cypher.txt) file.
 
 #### Create Node
 
