@@ -44,15 +44,27 @@ will store information about student groups, classrooms, lecturers, and work hou
 
 
 ### Cypher Statements
-#### Create
+#### Create Node
+TimeTable
 ```
-CREATE (SoftDev3:TimeTable {course: 'BSc in Software Development', campus: 'Galway', year: 3, semester: 6, academicYear: '2016/2017'})
-.....
+CREATE (SoftDev3:TimeTable {course: 'BSc in Software Development', campus: 'Galway', 
+year: 3, semester: 6, academicYear: '2016/2017'})
+```
+Room
+```
+CREATE (room994:Room {room: 'Room 994', capacity: 90})
+```
+Timer Slot
+```
+CREATE (time13to14:TimerSlot {time: '13:00 to 14:00'})
+```
 
-```
+#### Create Relationships
+
+
 
 #### Delete
 ```
-MATCH (r) WHERE id(r) = 14 DELETE (r);
+
 ```
 
