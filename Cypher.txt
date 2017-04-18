@@ -1,0 +1,19 @@
+MATCH (n) DETACH DELETE n
+
+CREATE (SoftDev3:TimeTable {course: 'BSc in Software Development', campus: 'Galway', year: 3, semester: 6, academicYear: '2016/2017'})
+CREATE (monTime13to14:TimerSlot {time: '13:00 to 14:00', weekName: 'Monday'})
+CREATE (room994:Room {room: 'Room 994', capacity: 90})
+CREATE (groupC:StudentGroup {group: 'Group C', totalStudents: 20})
+CREATE (graphTheory:Subject {subject: 'Ghaph Theory'})
+CREATE (ianMcloughlin:Lecturer {name: 'Ian Mcloghlin'})
+
+
+CREATE (monTime13to14)-[:TIME]->(SoftDev3), (room994)-[:ROOM]->(monTime13to14), (groupC)-[:GROUP]->(monTime13to14),
+(graphTheory)-[:SUBJECT]->(monTime13to14), (ianMcloughlin)-[:LECTURER]->(graphTheory)
+
+
+
+
+
+MATCH (n)
+DETACH DELETE n

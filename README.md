@@ -31,13 +31,6 @@ will store information about student groups, classrooms, lecturers, and work hou
 * TIMER
 * GROUP
 
-
-### Relationships
-
-* (:Subject)-[:SUBJECT_OF]->(:TimeTable)
-* (:RoomCapacity)-[:ROOM]->(:TimeTable)
-
-
 ## Database Setup
 
 ### Start the Database
@@ -45,26 +38,49 @@ will store information about student groups, classrooms, lecturers, and work hou
 
 ### Cypher Statements
 #### Create Node
+
 TimeTable
 ```
 CREATE (SoftDev3:TimeTable {course: 'BSc in Software Development', campus: 'Galway', 
 year: 3, semester: 6, academicYear: '2016/2017'})
 ```
+Timer Slot
+```
+CREATE (monTime13to14:TimerSlot {time: '13:00 to 14:00', weekName: 'Monday'})
+```
 Room
 ```
 CREATE (room994:Room {room: 'Room 994', capacity: 90})
 ```
-Timer Slot
+Student Group
 ```
-CREATE (time13to14:TimerSlot {time: '13:00 to 14:00'})
+CREATE (groupC:StudentGroup {group: 'Group C', totalStudents: 20})
 ```
+Subject
+```
+CREATE (graphTheory:Subject {subject: 'Ghaph Theory'})
+```
+Lecturer
+```
+CREATE (ianMcloughlin:Lecturer {name: 'Ian Mcloghlin'})
+```
+
 
 #### Create Relationships
 
-
-
-#### Delete
+```
+CREATE 
+(monTime13to14)-[:TIME]->(SoftDev3), 
+(room994)-[:ROOM]->(monTime13to14), 
+(groupC)-[:GROUP]->(monTime13to14),
+(graphTheory)-[:SUBJECT]->(monTime13to14), 
+(ianMcloughlin)-[:LECTURER]->(graphTheory)
 ```
 
+#### Delete
+
+All Nodes
+```
+MATCH (n) DETACH DELETE n
 ```
 
