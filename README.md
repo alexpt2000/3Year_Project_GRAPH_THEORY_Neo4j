@@ -76,6 +76,7 @@ CREATE
 (graphTheory)-[:SUBJECT]->(monTime13to14), 
 (ianMcloughlin)-[:LECTURER]->(graphTheory)
 ```
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DesignCypher.png)
 
 #### Delete
 
