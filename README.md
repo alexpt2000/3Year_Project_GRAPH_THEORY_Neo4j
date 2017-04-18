@@ -17,11 +17,11 @@ will store information about student groups, classrooms, lecturers, and work hou
 ### Node labels
 
 * TimeTable
-** TimerSlot
-** Room
-** StudentGroup
-** Subject
-*** Lecturer
+* TimerSlot
+* Room
+* StudentGroup
+* Subject
+* Lecturer
 
 ### Relationship types
 
@@ -46,13 +46,9 @@ will store information about student groups, classrooms, lecturers, and work hou
 ### Cypher Statements
 #### Create
 ```
-CREATE (m:Room { id: 994, title: 'Room 994', Capacity: 90 });
-CREATE (m:Room { id: 223, title: 'Room 223', Capacity: 60 });
+CREATE (SoftDev3:TimeTable {course: 'BSc in Software Development', campus: 'Galway', year: 3, semester: 6, academicYear: '2016/2017'})
 .....
-CREATE (s:Subject { title: 'GRAPH THEORY'});
-CREATE (s:Subject { title: 'Database Mgmt Sys'});
-.....
-CREATE (c:Course { title: 'BSC Software Development'});
+
 ```
 
 #### Delete
