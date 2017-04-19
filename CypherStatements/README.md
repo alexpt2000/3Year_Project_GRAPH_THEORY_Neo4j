@@ -6,7 +6,7 @@ You can enter the cypther commands in the **Neo4j browser**, or the commands are
 * [Cypher.json](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.json)
 * [Cypher.cyp](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.cyp)
 
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/browserNeo4j.png)
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/graph.png)
 
 ## Create Node
 
@@ -47,7 +47,7 @@ CREATE
 (graphTheory)-[:SUBJECT]->(monTime13to14), 
 (ianMcloughlin)-[:LECTURER]->(graphTheory)
 ```
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignCypher.png)
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/browserNeo4j.png)
 
 ## Delete 
 
