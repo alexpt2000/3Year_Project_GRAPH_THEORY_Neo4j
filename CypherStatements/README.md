@@ -52,6 +52,12 @@ CREATE
 ```
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/browserNeo4j.png)
 
+## Read
+> All Nodes
+```
+MATCH (n) RETURN n
+```
+
 ## Delete 
 
 > All Nodes
