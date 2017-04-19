@@ -22,9 +22,9 @@ This is precisely the role of the Neo4j database, which allows data to be persis
 
 ## The Project
 
-In the diagram below is a model for implementation of [GMIT Timetable](http://timetable.gmit.ie/)
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/TimeTable.png), all the information for this diagram was extracted from the GMIT website.
+In the diagram below is a model for implementation of [GMIT Timetable](http://timetable.gmit.ie/), all the information for this diagram was extracted from the GMIT website.
 
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/TimeTable.png)
 
 ### The Prototype Database
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignProject.png)
