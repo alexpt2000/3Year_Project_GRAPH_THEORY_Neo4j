@@ -1,13 +1,21 @@
-Wiki
-### [Neo4j   ](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/wiki)  -  [Installation and configuration   ](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/wiki/Installation-and-configuration)
-
-# README
+# Overview
 
 Design and prototype a Neo4j database for the timetabling system for a third level institute like GMIT. The database
 will store information about student groups, classrooms, lecturers, and work hours – just like the currently used timetabling system at GMIT.
 
 #### [The Project - PDF](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/project.pdf)
 
+## Introduction
+
+When developing an application, we usually come across the situation of working with the relational database, performing several complex queries. Such queries may have this complexity due to the fact that we are modeling data that are not natural to the relational paradigm, in a relational database.
+
+Relational databases do not allow the data to be represented by graphs in a natural way, so some research becomes extremely complex or even impractical in relational databases, which is the case of the query exemplified above. Navigating the graph structure, we easily get the results we wanted.
+
+This is precisely the role of the Neo4j database, which allows data to be persisted and traversed in the same way as graphs and maintaining some characteristics that have become quite common in relational databases, such as transaction control and following ACID properties.
+
+* [What is a graph database?](GraphDatabaseNeo4j)
+* [What is Neo4j?](GraphDatabaseNeo4j)
+* [Installation and configuration Neo4j](InstallationConfigurationNeo4j)
 
 
 ## The Model
@@ -31,69 +39,4 @@ will store information about student groups, classrooms, lecturers, and work hou
 * TIMER
 * GROUP
 
-## Database Setup
-Neo4j runs on Linux, Windows and Mac OS X. There are desktop installers for Community Edition available for Mac OS X and Windows. There are also platform-specific packages and zip/tar archives of both Community Edition and Enterprise editions.
-
-### Install Neo4j
-[Download Neo4j Community Edition](https://neo4j.com/download/community-edition/)
-
-### Start the Database
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/StartNeo4j.png)
-
-### Cypher Statements
-You can enter the cypther commands in the Neo4j browser, or the commands are provided in the [Cypher.txt](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/Cypher.txt) file.
-
-#### Create Node
-
-TimeTable
-```
-CREATE (SoftDev3:TimeTable {course: 'BSc in Software Development', campus: 'Galway', 
-year: 3, semester: 6, academicYear: '2016/2017'})
-```
-Timer Slot
-```
-CREATE (monTime13to14:TimerSlot {time: '13:00 to 14:00', weekName: 'Monday'})
-```
-Room
-```
-CREATE (room994:Room {room: 'Room 994', capacity: 90})
-```
-Student Group
-```
-CREATE (groupC:StudentGroup {group: 'Group C', totalStudents: 20})
-```
-Subject
-```
-CREATE (graphTheory:Subject {subject: 'Ghaph Theory'})
-```
-Lecturer
-```
-CREATE (ianMcloughlin:Lecturer {name: 'Ian Mcloghlin'})
-```
-
-
-#### Create Relationships
-
-```
-CREATE 
-(monTime13to14)-[:TIME]->(SoftDev3), 
-(room994)-[:ROOM]->(monTime13to14), 
-(groupC)-[:GROUP]->(monTime13to14),
-(graphTheory)-[:SUBJECT]->(monTime13to14), 
-(ianMcloughlin)-[:LECTURER]->(graphTheory)
-```
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignCypher.png)
-
-#### Delete 
-
-All Nodes
-```
-MATCH (n) DETACH DELETE n
-```
-
-#### Update 
-
-```
-
-```
-
+[Cypher Statements](CypherStatements)
