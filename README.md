@@ -27,11 +27,10 @@ In the diagram below is a model for implementation of GMIT timetable, all the in
 * [Timetable - GMIT](http://timetable.gmit.ie/)
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/TimeTable.png)
 
-### The Model
+### The Prototype Database
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignProject.png)
 
 ### Node labels
-
 * TimeTable
 * TimerSlot
 * Room
@@ -40,16 +39,16 @@ In the diagram below is a model for implementation of GMIT timetable, all the in
 * Lecturer
 
 ### Relationship types
-
 * LECTURER
 * SUBJECT
 * ROOM
 * TIMER
 * GROUP
 
-[Cypher Statements](CypherStatements)
+### Run script to test the database
+* [Cypher Statements](CypherStatements)
 
 
-### References
+## References
 * [neo4j.com](https://neo4j.com/)
 * [WikipediA](https://en.wikipedia.org/wiki/Cypher_Query_Language)
