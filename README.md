@@ -13,14 +13,22 @@ Relational databases do not allow the data to be represented by graphs in a natu
 
 This is precisely the role of the Neo4j database, which allows data to be persisted and traversed in the same way as graphs and maintaining some characteristics that have become quite common in relational databases, such as transaction control and following ACID properties.
 
-* [What is a graph database?](GraphDatabaseNeo4j)
-* [What is Neo4j?](GraphDatabaseNeo4j)
+* [What is a graph database?](GraphDatabase)
+* [What is Neo4j?](Neo4j)
+
+### Prerequisites
 * [Installation and configuration Neo4j](InstallationConfigurationNeo4j)
 
 
-## The Model
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignProject.png)
+## The Project
 
+In the diagram below is a model for implementation of GMIT timetable, all the information for this diagram was extracted from the GMIT website.
+
+* [Timetable - GMIT](http://timetable.gmit.ie/)
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/TimeTable.png)
+
+### The Model
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignProject.png)
 
 ### Node labels
 
@@ -40,3 +48,8 @@ This is precisely the role of the Neo4j database, which allows data to be persis
 * GROUP
 
 [Cypher Statements](CypherStatements)
+
+
+### References
+* [neo4j.com](https://neo4j.com/)
+* [WikipediA](https://en.wikipedia.org/wiki/Cypher_Query_Language)
