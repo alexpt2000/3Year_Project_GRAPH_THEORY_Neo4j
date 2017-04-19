@@ -5,36 +5,36 @@ You can enter the cypther commands in the Neo4j browser, or the commands are pro
 
 ## Create Node
 
-TimeTable
-```
+> TimeTable
+```sh
 CREATE (SoftDev3:TimeTable {course: 'BSc in Software Development', campus: 'Galway', 
 year: 3, semester: 6, academicYear: '2016/2017'})
 ```
-Timer Slot
-```
+> Timer Slot
+```sh
 CREATE (monTime13to14:TimerSlot {time: '13:00 to 14:00', weekName: 'Monday'})
 ```
-Room
-```
+> Room
+```sh
 CREATE (room994:Room {room: 'Room 994', capacity: 90})
 ```
-Student Group
-```
+> Student Group
+```sh
 CREATE (groupC:StudentGroup {group: 'Group C', totalStudents: 20})
 ```
-Subject
-```
+> Subject
+```sh
 CREATE (graphTheory:Subject {subject: 'Ghaph Theory'})
 ```
-Lecturer
-```
+> Lecturer
+```sh
 CREATE (ianMcloughlin:Lecturer {name: 'Ian Mcloghlin'})
 ```
 
 
 ## Create Relationships
 
-```
+```sh
 CREATE 
 (monTime13to14)-[:TIME]->(SoftDev3), 
 (room994)-[:ROOM]->(monTime13to14), 
@@ -46,14 +46,14 @@ CREATE
 
 ## Delete 
 
-All Nodes
-```
+> All Nodes
+```sh
 MATCH (n) DETACH DELETE n
 ```
 
 ## Update 
 
-```
+```sh
 
 ```
 
