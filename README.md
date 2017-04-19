@@ -22,10 +22,9 @@ This is precisely the role of the Neo4j database, which allows data to be persis
 
 ## The Project
 
-In the diagram below is a model for implementation of GMIT timetable, all the information for this diagram was extracted from the GMIT website.
+In the diagram below is a model for implementation of [GMIT Timetable](http://timetable.gmit.ie/)
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/TimeTable.png), all the information for this diagram was extracted from the GMIT website.
 
-* [Timetable - GMIT](http://timetable.gmit.ie/)
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/TimeTable.png)
 
 ### The Prototype Database
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignProject.png)
@@ -45,10 +44,12 @@ In the diagram below is a model for implementation of GMIT timetable, all the in
 * TIMER
 * GROUP
 
-### Run script to test the database
+## Run script to test the database
 * [Cypher Statements](CypherStatements)
 
 
 ## References
 * [neo4j.com](https://neo4j.com/)
 * [WikipediA](https://en.wikipedia.org/wiki/Cypher_Query_Language)
+* [GMIT Timetable](http://timetable.gmit.ie/)
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/TimeTable.png)
