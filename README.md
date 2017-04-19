@@ -52,4 +52,3 @@ In the diagram below is a model for implementation of [GMIT Timetable](http://ti
 * [neo4j.com](https://neo4j.com/)
 * [WikipediA](https://en.wikipedia.org/wiki/Cypher_Query_Language)
 * [GMIT Timetable](http://timetable.gmit.ie/)
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/TimeTable.png)
