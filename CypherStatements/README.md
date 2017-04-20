@@ -57,6 +57,10 @@ CREATE
 ```
 MATCH (n) RETURN n
 ```
+> Found all classes on Monday
+```sh
+$ MATCH (p:TimerSlot)-[]->(t:TimeTable), (s:Subject)-[]->(), (g:StudentGroup)-[]->() where p.weekName='Monday' RETURN p, t, s, g
+```
 
 ## Delete 
 
