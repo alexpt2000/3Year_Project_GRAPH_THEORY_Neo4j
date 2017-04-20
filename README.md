@@ -29,7 +29,7 @@ In the diagram below is a model for implementation of [GMIT Timetable](http://ti
 ## Run Queries to import and test the database
 > In Cypher Statements you can test the database importing through the provided scripts, also run simple queries to find, modify or delete nodes.
 
-* [Cypher Statements](CypherStatements)
+* [Cypher Statements and Scripts Database](CypherStatements)
 
 ## The Prototype Database
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/DesignProject.png)
