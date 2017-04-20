@@ -57,21 +57,38 @@ CREATE
 ```
 MATCH (n) RETURN n
 ```
+> Displaying only a Lecturer and the subject he teaches
+```
+match (l:Lecturer { name: 'Ian Mcloghlin'})-[]-(s:Subject) return l, s
+```
 > Found all classes on Monday
-```sh
-$ MATCH (p:TimerSlot)-[]->(t:TimeTable), (s:Subject)-[]->(), (g:StudentGroup)-[]->() where p.weekName='Monday' RETURN p, t, s, g
+```
+MATCH (p:TimerSlot)-[]->(t:TimeTable), (s:Subject)-[]->(), (g:StudentGroup)-[]->() where p.weekName='Monday' RETURN p, t, s, g
+```
+> Found all classes on Monday and Group C
+```
+MATCH (p:TimerSlot)-[]->(t:TimeTable), (s:Subject)-[]->(), (g:StudentGroup)-[]->() where p.weekName='Monday' and g.group='Group C' RETURN p, t, s, g
+```
+
+## Update 
+> Changing Lecturer Name
+```
+match (l:Lecturer { name: 'Ian Mcloghlin'})-[]-(s:Subject) set l.name='Ian' return l, s
+
+// Reversing the change
+match (l:Lecturer { name: 'Ian'})-[]-(s:Subject) set l.name='Ian Mcloghlin' return l, s
 ```
 
 ## Delete 
 
+> Deleted a Node
+```
+match (l:Lecturer)-[e:LECTURER]->() where l.name = 'Ian Mcloghlin' DELETE e;
+```
 > All Nodes
 ```
 MATCH (n) DETACH DELETE n
 ```
 
-## Update 
 
-```
-
-```
 
