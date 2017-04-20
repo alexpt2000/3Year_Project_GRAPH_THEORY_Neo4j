@@ -90,5 +90,5 @@ match (l:Lecturer)-[e:LECTURER]->() where l.name = 'Ian Mcloghlin' DELETE e;
 MATCH (n) DETACH DELETE n
 ```
 
-
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/CypherScreen.gif)
 
