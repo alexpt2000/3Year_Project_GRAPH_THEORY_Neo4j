@@ -50,6 +50,7 @@ To import the entire database into Neo4j, the following files are available:
 * [Cypher.vsv](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.csv)
 * [Cypher.json](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.json)
 * [Cypher.cyp](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.cyp)
+* [DataBase](DataBase)
 
 > If you decide to use the Cypher.cyp or Cypher.txt, simply select 
 > the content, copy and paste in Neo4j browser, and execute.
