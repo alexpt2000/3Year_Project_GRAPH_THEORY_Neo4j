@@ -1,17 +1,6 @@
 # Cypher Statements
-You can enter the cypther commands in the **Neo4j browser**, or the commands are provided files.
 
-* [Cypher.txt](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.txt)
-* [Cypher.vsv](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.csv)
-* [Cypher.json](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.json)
-* [Cypher.cyp](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.cyp)
-
-> If you decide to use the Cypher.cyp or Cypher.txt, simply select 
-> the content, copy and paste in Neo4j browser, and execute.
-
-![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/graph.png)
-
-## Create Node
+## Creating a Simple Nodes
 
 > TimeTable
 ```
@@ -39,7 +28,6 @@ CREATE (graphTheory:Subject {subject: 'Ghaph Theory'})
 CREATE (ianMcloughlin:Lecturer {name: 'Ian Mcloghlin'})
 ```
 
-
 ## Create Relationships
 
 ```
@@ -50,9 +38,27 @@ CREATE
 (graphTheory)-[:SUBJECT]->(monTime13to14), 
 (ianMcloughlin)-[:LECTURER]->(graphTheory)
 ```
+Result
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/browserNeo4j.png)
 
-## Read
+
+## GMIT Timetable
+
+To import the entire database into Neo4j, the following files are available:
+
+* [Cypher.txt](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.txt)
+* [Cypher.vsv](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.csv)
+* [Cypher.json](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.json)
+* [Cypher.cyp](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/DataBase/Cypher.cyp)
+
+> If you decide to use the Cypher.cyp or Cypher.txt, simply select 
+> the content, copy and paste in Neo4j browser, and execute.
+
+Result
+![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/graph.png)
+
+## Running Simple Queries
+### Read
 > All Nodes
 ```
 MATCH (n) RETURN n
@@ -70,7 +76,7 @@ MATCH (p:TimerSlot)-[]->(t:TimeTable), (s:Subject)-[]->(), (g:StudentGroup)-[]->
 MATCH (p:TimerSlot)-[]->(t:TimeTable), (s:Subject)-[]->(), (g:StudentGroup)-[]->() where p.weekName='Monday' and g.group='Group C' RETURN p, t, s, g
 ```
 
-## Update 
+### Update 
 > Changing Lecturer Name
 ```
 match (l:Lecturer { name: 'Ian Mcloghlin'})-[]-(s:Subject) set l.name='Ian' return l, s
@@ -79,7 +85,7 @@ match (l:Lecturer { name: 'Ian Mcloghlin'})-[]-(s:Subject) set l.name='Ian' retu
 match (l:Lecturer { name: 'Ian'})-[]-(s:Subject) set l.name='Ian Mcloghlin' return l, s
 ```
 
-## Delete 
+### Delete 
 
 > Deleted a Node
 ```
@@ -90,5 +96,6 @@ match (l:Lecturer)-[e:LECTURER]->() where l.name = 'Ian Mcloghlin' DELETE e;
 MATCH (n) DETACH DELETE n
 ```
 
+## Running All Queries
 ![](https://github.com/alexpt2000gmit/3Year_Project_GRAPH_THEORY_Neo4j/blob/master/img/CypherScreen.gif)
 
